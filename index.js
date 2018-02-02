@@ -20,6 +20,19 @@ app.use(
     })
 );
 
+app.get("/api/users", (req, res) => {
+  const users = [
+    {
+      name: 'Ray'
+    },
+    {
+      name: 'James'
+    }
+  ];
+
+  res.json(users)
+})
+
 function runServer(port = PORT) {
     const server = app
         .listen(port, () => {
