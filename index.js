@@ -27,6 +27,9 @@ app.get("/api/users", (req, res) => {
     },
     {
       name: 'James'
+    },
+    {
+      name: 'Mary'
     }
   ];
 
